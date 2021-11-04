@@ -8,8 +8,6 @@
 data
 tmp
 model
-bert/.ipynb_checkpoints
-bert/__pycache__
 notebooks/*.xlsx
 *.png
 notebooks/*.csv
