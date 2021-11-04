@@ -1,0 +1,613 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "columns": [
+                    "title",
+                    "abstract",
+                    "author",
+                    "affiliation",
+                    "countries_mentioned",
+                    "interventions_found",
+                    "plant_products_search",
+                    "animal_products_search",
+                    "edit_url"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"articles_covid\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+                },
+                "sort": [
+                    "year",
+                    "desc"
+                ],
+                "title": "covid_search",
+                "version": 1
+            },
+            "id": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+            "type": "search",
+            "updated_at": "2020-10-08T09:50:16.792Z",
+            "version": "WzE0MSwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "covid_filters",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_filters\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1602154082485\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"tags\",\"parent\":\"\",\"label\":\"Tags\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1592312376626\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"topics_hierarchy\",\"parent\":\"\",\"label\":\"Topics search\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312395864\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"geo_regions\",\"parent\":\"\",\"label\":\"Geographical regions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1592312407106\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"countries_mentioned\",\"parent\":\"\",\"label\":\"Countries search\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1592312416906\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"provinces\",\"parent\":\"\",\"label\":\"Provinces\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312429798\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"districts\",\"parent\":\"\",\"label\":\"Districts\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312443333\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"plant_products_search\",\"parent\":\"\",\"label\":\"Plant products search\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312465444\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"animal_products_search\",\"parent\":\"\",\"label\":\"Animal products search\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312476490\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"affiliation\",\"parent\":\"\",\"label\":\"Author affiliations\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312488212\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"author\",\"parent\":\"\",\"label\":\"Authors\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312499902\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"journal\",\"parent\":\"\",\"label\":\"Journal name\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312511962\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"study_type\",\"parent\":\"\",\"label\":\"Study design type\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312523936\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"interventions_found\",\"parent\":\"\",\"label\":\"Interventions found\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312546470\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"intervention_labels\",\"parent\":\"\",\"label\":\"Intervention labels\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312555984\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"world_bankdivision_regions\",\"parent\":\"\",\"label\":\"World Bank regions division \",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312570853\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"technology intervention\",\"parent\":\"\",\"label\":\"Technology interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":50000,\"order\":\"desc\"}},{\"id\":\"1592312587599\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"socioeconomic intervention\",\"parent\":\"\",\"label\":\"Socioeconomic interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312597268\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"ecosystem intervention\",\"parent\":\"\",\"label\":\"Ecosystem interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312610072\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"storage intervention\",\"parent\":\"\",\"label\":\"Storage interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312623190\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"mechanisation intervention\",\"parent\":\"\",\"label\":\"Mechanisation interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312632674\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"programs_found\",\"parent\":\"\",\"label\":\"Programs and Initiatives\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312643836\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"compared_terms\",\"parent\":\"\",\"label\":\"Compared terms\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312660090\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"measurements\",\"parent\":\"\",\"label\":\"Measurements\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1592312671944\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"measurements_for_crops\",\"parent\":\"\",\"label\":\"Measurements for crops\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1592312681810\",\"indexPattern\":\"articles_covid\",\"fieldName\":\"measurements_for_interventions\",\"parent\":\"\",\"label\":\"Measurements for interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true,\"pinFilters\":true},\"aggs\":[]}"
+            },
+            "id": "14936b60-afd2-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T11:30:47.235Z",
+            "version": "WzE2NywxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_articles_number",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_articles_number\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}"
+            },
+            "id": "2e178df0-afd2-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzEwLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "Covid_countries",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Covid_countries\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"countries_mentioned\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "47125c40-afd2-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzExLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "Covid_study_type",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Covid_study_type\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"study_type\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "6b99dca0-afd2-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzEyLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_affiliation_top",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_affiliation_top\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"affiliation\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "93c02ea0-afd2-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzEzLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_geo_regions",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_geo_regions\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geo_regions\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "b4955560-afd2-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzE0LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_plants_search",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_plants_search\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"plant_products_search\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "d57af6e0-afd2-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzE1LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_animal_products",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_animal_products\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"animal_products_search\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "ea132e60-afd2-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzE2LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_world_bank_regions",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_world_bank_regions\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"world_bankdivision_regions\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "17ef4b20-afd3-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzE3LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_topics_pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_topics_pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"topics\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "705b66e0-afd3-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzE4LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_interv_labels_by_regions",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 17\":\"rgb(247,252,245)\",\"17 - 33\":\"rgb(199,233,192)\",\"33 - 49\":\"rgb(116,196,118)\",\"49 - 65\":\"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_interv_labels_by_regions\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geo_regions\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"intervention_labels\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "a72ce900-afd3-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzE5LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_technology_intervention",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_technology_intervention\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"technology intervention\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "d0909d00-afd3-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzIwLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_socioeconomic_interventions",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_socioeconomic_interventions\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"socioeconomic intervention\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "e7a4f810-afd3-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzIxLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_ecosystem_interventions",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_ecosystem_interventions\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ecosystem intervention\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "fe299640-afd3-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzIyLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_storage_intervention",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_storage_intervention\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"storage intervention\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "2a9ab150-afd4-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzIzLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_mechanization_interventions",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_mechanization_interventions\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"mechanisation intervention\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "4494a020-afd4-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzI0LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_measurements_pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_measurements_pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"measurements\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"No measurements\"}}]}"
+            },
+            "id": "80ac8960-afd4-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzI1LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_crops_measurements",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_crops_measurements\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"measurements_for_crops\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "9653bfe0-afd4-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzI2LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_interventions_measurements",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_interventions_measurements\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"measurements_for_interventions\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "b0b6f7d0-afd4-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzI3LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_interventions_heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 6\":\"rgb(255,245,240)\",\"6 - 11\":\"rgb(252,187,161)\",\"11 - 17\":\"rgb(251,106,74)\",\"17 - 22\":\"rgb(203,24,29)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_interventions_heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"interventions_found\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geo_regions\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "09d7e4a0-afd5-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzI4LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_measurements_for_crops",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 0.5\":\"rgb(247,252,245)\",\"0.5 - 1\":\"rgb(199,233,192)\",\"1 - 1.5\":\"rgb(116,196,118)\",\"1.5 - 2\":\"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_measurements_for_crops\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geo_regions\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"measurements_for_crops\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "64f45350-afd5-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzI5LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_measurements_interv_heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 2\":\"rgb(247,252,245)\",\"2 - 4\":\"rgb(199,233,192)\",\"4 - 6\":\"rgb(116,196,118)\",\"6 - 8\":\"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_measurements_interv_heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"measurements_for_interventions\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geo_regions\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "7f25b390-afda-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzMwLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[{\"range\":{\"year\":{\"gte\":961424594644,\"lte\":1592576594644,\"format\":\"epoch_millis\"}}}]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_download_csv",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_download_csv\",\"type\":\"discover_tab_redirection\",\"params\":{},\"aggs\":[]}"
+            },
+            "id": "710d2120-b238-11ea-86a8-571dedcfa3d4",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzMxLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "DFS_gender_age_population_tags",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 2\":\"rgb(255,245,240)\",\"2 - 4\":\"rgb(252,187,161)\",\"4 - 6\":\"rgb(251,106,74)\",\"6 - 8\":\"rgb(203,24,29)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"DFS_gender_age_population_tags\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"gender_age_population_tags\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geo_regions\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "8cce07d0-c02f-11ea-ab7f-a9072c0ec98c",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzMyLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "DFS_population_tags",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 1.5\":\"rgb(255,255,255)\",\"1.5 - 3\":\"rgb(217,217,217)\",\"3 - 4.5\":\"rgb(150,150,150)\",\"4.5 - 6\":\"rgb(82,82,82)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"DFS_population_tags\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greys\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"population tags\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geo_regions\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "af7e5730-c02f-11ea-ab7f-a9072c0ec98c",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzMzLDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "Covid_animals_found",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 4\":\"rgb(255,245,240)\",\"4 - 7\":\"rgb(252,187,161)\",\"7 - 10\":\"rgb(251,106,74)\",\"10 - 13\":\"rgb(203,24,29)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Covid_animals_found\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"animals_found_details\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geo_regions\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "f74e2ef0-ec26-11ea-ab7f-a9072c0ec98c",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzM0LDFd"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "22f8fc70-afd1-11ea-86a8-571dedcfa3d4",
+                "title": "covid_animals_found_pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"covid_animals_found_pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"animals_found_details\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "3b982d90-ec27-11ea-ab7f-a9072c0ec98c",
+            "migrationVersion": {
+                "visualization": "6.7.2"
+            },
+            "type": "visualization",
+            "updated_at": "2020-10-08T09:25:12.248Z",
+            "version": "WzM1LDFd"
+        },
+        {
+            "attributes": {
+                "fieldFormatMap": "{\"edit_url\":{\"id\":\"url\",\"params\":{\"urlTemplate\":\"http://ceres01.serverfarm.cornell.edu:8501/?_id={{value}}&_index=articles_covid&_es_host=ceres01.serverfarm.cornell.edu:9200&_kibana_host=ceres01.serverfarm.cornell.edu:5601\",\"labelTemplate\":\"Edit row\"}}}",
+                "fields": "[{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"abstract\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"affiliation\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"animal_products_search\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"animal_products_search_details\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"animals_found\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"animals_found_details\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"author\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"comments\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"compared_terms\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"countries_mentioned\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"country_codes\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"dataset\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"dataset_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"districts\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"ecosystem intervention\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"edit_url\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"gender_age_population_tags\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"geo_regions\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"intervention_labels\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"interventions_found\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"is_used_in_full_text_search\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"journal\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"keywords_study_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"measurements\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"measurements_for_crops\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"measurements_for_interventions\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"mechanisation intervention\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"normalized_key_words\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"outcomes_details\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"outcomes_found\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"plant_products_search\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"plant_products_search_details\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"population tags\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"programs_found\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"provinces\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"socioeconomic intervention\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"storage intervention\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"study_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"tags\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"team_tags\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"technology intervention\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"title\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"topics\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"topics_hierarchy\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"topics_keywords\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"url\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"world_bankdivision_regions\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"year\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true}]",
+                "timeFieldName": "year",
+                "title": "articles_covid"
+            },
+            "id": "articles_covid",
+            "migrationVersion": {
+                "index-pattern": "6.5.0"
+            },
+            "type": "index-pattern",
+            "updated_at": "2020-10-08T09:53:44.155Z",
+            "version": "WzE0MywxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"*\"},\"filter\":[]}"
+                },
+                "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+                "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"1\",\"w\":48,\"x\":0,\"y\":24},\"id\":\"22f8fc70-afd1-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"1\",\"type\":\"search\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":8,\"i\":\"2\",\"w\":48,\"x\":0,\"y\":0},\"id\":\"14936b60-afd2-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":7,\"i\":\"3\",\"w\":12,\"x\":0,\"y\":8},\"id\":\"2e178df0-afd2-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":16,\"i\":\"4\",\"w\":19,\"x\":12,\"y\":8},\"id\":\"47125c40-afd2-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":9,\"i\":\"5\",\"w\":12,\"x\":0,\"y\":15},\"id\":\"6b99dca0-afd2-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":12,\"i\":\"6\",\"w\":17,\"x\":31,\"y\":12},\"id\":\"93c02ea0-afd2-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"7\",\"w\":9,\"x\":0,\"y\":37},\"id\":\"b4955560-afd2-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"8\",\"w\":15,\"x\":0,\"y\":51},\"id\":\"d57af6e0-afd2-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"9\",\"w\":15,\"x\":15,\"y\":51},\"id\":\"ea132e60-afd2-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"10\",\"w\":17,\"x\":9,\"y\":37},\"id\":\"17ef4b20-afd3-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"11\",\"w\":22,\"x\":26,\"y\":37},\"id\":\"705b66e0-afd3-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"12\",\"w\":24,\"x\":0,\"y\":66},\"id\":\"a72ce900-afd3-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"12\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"13\",\"w\":9,\"x\":0,\"y\":81},\"id\":\"d0909d00-afd3-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"13\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"14\",\"w\":10,\"x\":9,\"y\":81},\"id\":\"e7a4f810-afd3-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"14\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"15\",\"w\":9,\"x\":19,\"y\":81},\"id\":\"fe299640-afd3-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"15\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"16\",\"w\":10,\"x\":28,\"y\":81},\"id\":\"2a9ab150-afd4-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"16\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"17\",\"w\":10,\"x\":38,\"y\":81},\"id\":\"4494a020-afd4-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"17\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"18\",\"w\":11,\"x\":0,\"y\":96},\"id\":\"80ac8960-afd4-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"18\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"19\",\"w\":18,\"x\":11,\"y\":96},\"id\":\"9653bfe0-afd4-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"19\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"20\",\"w\":19,\"x\":29,\"y\":96},\"id\":\"b0b6f7d0-afd4-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"20\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":18,\"i\":\"21\",\"w\":20,\"x\":0,\"y\":111},\"id\":\"09d7e4a0-afd5-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"21\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":18,\"i\":\"22\",\"w\":11,\"x\":20,\"y\":111},\"id\":\"64f45350-afd5-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"22\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":18,\"i\":\"23\",\"w\":17,\"x\":31,\"y\":111},\"id\":\"7f25b390-afda-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"23\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":4,\"i\":\"24\",\"w\":17,\"x\":31,\"y\":8},\"id\":\"710d2120-b238-11ea-86a8-571dedcfa3d4\",\"panelIndex\":\"24\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"25\",\"w\":24,\"x\":0,\"y\":129},\"id\":\"8cce07d0-c02f-11ea-ab7f-a9072c0ec98c\",\"panelIndex\":\"25\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"26\",\"w\":24,\"x\":24,\"y\":129},\"id\":\"af7e5730-c02f-11ea-ab7f-a9072c0ec98c\",\"panelIndex\":\"26\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"27\",\"w\":24,\"x\":24,\"y\":66},\"id\":\"f74e2ef0-ec26-11ea-ab7f-a9072c0ec98c\",\"panelIndex\":\"27\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"28\",\"w\":18,\"x\":30,\"y\":51},\"id\":\"3b982d90-ec27-11ea-ab7f-a9072c0ec98c\",\"panelIndex\":\"28\",\"type\":\"visualization\",\"version\":\"6.6.0\"}]",
+                "refreshInterval": {
+                    "pause": true,
+                    "value": 0
+                },
+                "timeFrom": "now-20y",
+                "timeRestore": true,
+                "timeTo": "now",
+                "title": "COVID_dashboard",
+                "version": 1
+            },
+            "id": "34ba9450-afd1-11ea-86a8-571dedcfa3d4",
+            "type": "dashboard",
+            "updated_at": "2020-10-08T11:30:54.283Z",
+            "version": "WzE2OCwxXQ=="
+        }
+    ],
+    "version": "6.8.0"
+}

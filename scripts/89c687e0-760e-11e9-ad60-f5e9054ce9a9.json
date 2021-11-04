@@ -1,0 +1,954 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "columns": [
+                    "title",
+                    "abstract",
+                    "affiliation",
+                    "countries_mentioned",
+                    "plant_products_search",
+                    "animal_products_search",
+                    "interventions_found",
+                    "topics_keywords"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"articles_for_teams\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+                },
+                "sort": [
+                    "year",
+                    "desc"
+                ],
+                "title": "Teams_search",
+                "version": 1
+            },
+            "id": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+            "type": "search",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "Teams_common_filter",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams_common_filter\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1539338480776\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"topics_hierarchy\",\"parent\":\"\",\"label\":\"Topics search\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":30000,\"order\":\"desc\"}},{\"id\":\"1543990303966\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"geo_regions\",\"parent\":\"\",\"label\":\"Geographical regions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":100,\"order\":\"desc\"}},{\"id\":\"1539338506908\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"countries_mentioned\",\"parent\":\"\",\"label\":\"Countries search\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":3000,\"order\":\"desc\"}},{\"id\":\"1564060145441\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"provinces\",\"parent\":\"\",\"label\":\"Provinces\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":30000,\"order\":\"desc\"}},{\"id\":\"1564060167827\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"districts\",\"parent\":\"\",\"label\":\"Districts\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":30000,\"order\":\"desc\"}},{\"fieldName\":\"plant_products_search\",\"id\":\"1539338269131\",\"indexPattern\":\"articles_for_teams\",\"label\":\"Plant products search\",\"options\":{\"dynamicOptions\":false,\"multiselect\":true,\"order\":\"desc\",\"size\":3000,\"type\":\"terms\"},\"parent\":\"\",\"type\":\"list\"},{\"id\":\"1539957543882\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"animal_products_search\",\"parent\":\"\",\"label\":\"Animal products search\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":3000,\"order\":\"desc\"}},{\"id\":\"1601021826726\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"animals_found\",\"parent\":\"\",\"label\":\"Animals found\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1542361160935\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"affiliation\",\"parent\":\"\",\"label\":\"Author affiliations\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":true,\"size\":30000,\"order\":\"desc\"}},{\"id\":\"1542361257736\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"author\",\"parent\":\"\",\"label\":\"Authors\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":true,\"size\":30000,\"order\":\"desc\"}},{\"id\":\"1542361212739\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"journal\",\"parent\":\"\",\"label\":\"Journal name\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":true,\"size\":10000,\"order\":\"desc\"}},{\"id\":\"1564060301485\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"study_type\",\"parent\":\"\",\"label\":\"Study design type\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":50,\"order\":\"desc\"}},{\"id\":\"1544088826361\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"outcomes_found\",\"parent\":\"\",\"label\":\"Outcomes found\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1546609455653\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"intervention_labels\",\"parent\":\"\",\"label\":\"Intervention labels\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":100,\"order\":\"desc\"}},{\"id\":\"1543990368615\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"world_bankdivision_regions\",\"parent\":\"\",\"label\":\"World Bank regions division \",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":100,\"order\":\"desc\"}},{\"id\":\"1548337720932\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"technology intervention\",\"parent\":\"\",\"label\":\"Technology interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":10000,\"order\":\"desc\"}},{\"id\":\"1548337770960\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"socioeconomic intervention\",\"parent\":\"\",\"label\":\"Socioeconomic interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":10000,\"order\":\"desc\"}},{\"id\":\"1548337834441\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"ecosystem intervention\",\"parent\":\"\",\"label\":\"Ecosystem interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":10000,\"order\":\"desc\"}},{\"id\":\"1553596524033\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"storage intervention\",\"parent\":\"\",\"label\":\"Storage interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":10000,\"order\":\"desc\"}},{\"id\":\"1557556361544\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"mechanisation intervention\",\"parent\":\"\",\"label\":\"Mechanisation interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":10000,\"order\":\"desc\"}},{\"id\":\"1557556413577\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"programs_found\",\"parent\":\"\",\"label\":\"Programs and Initiatives\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":10000,\"order\":\"desc\"}},{\"id\":\"1567670665965\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"measurements_for_interventions\",\"parent\":\"\",\"label\":\"Measurements for interventions\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":10000,\"order\":\"desc\"}},{\"id\":\"1567670693413\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"measurements_for_crops\",\"parent\":\"\",\"label\":\"Measurements for crops\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":10000,\"order\":\"desc\"}},{\"id\":\"1564060195528\",\"indexPattern\":\"articles_for_teams\",\"fieldName\":\"normalized_key_words\",\"parent\":\"\",\"label\":\"Author keywords\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":10000,\"order\":\"desc\"}}],\"pinFilters\":true,\"updateFiltersOnChange\":true,\"useTimeFilter\":false},\"aggs\":[]}"
+            },
+            "id": "c63546e0-7612-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2020-09-25T08:19:19.044Z",
+            "version": 15
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams_count_articles",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams_count_articles\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}"
+            },
+            "id": "3b59a290-761d-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams interventions labels pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams interventions labels pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"intervention_labels\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"No intervention\"}}]}"
+            },
+            "id": "a3ef02f0-761d-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 33\":\"rgb(247,252,245)\",\"33 - 65\":\"rgb(199,233,192)\",\"65 - 98\":\"rgb(116,196,118)\",\"98 - 130\":\"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"dataset\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "9b959a00-761e-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams journal pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams journal pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"journal\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"exclude\":\"\\\"\\\"\"}}]}"
+            },
+            "id": "52cc1140-761f-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-08-13T13:07:56.204Z",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams author heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 2\":\"rgb(247,251,255)\",\"2 - 4\":\"rgb(198,219,239)\",\"4 - 6\":\"rgb(107,174,214)\",\"6 - 8\":\"rgb(33,113,181)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams author heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Blues\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"author\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "8cd45460-761f-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams author affiliations",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams author affiliations\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"affiliation\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "2ef5c300-7620-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams articles trends",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams articles trends\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "c98e2d80-7620-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams topics heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 18\":\"rgb(247,252,245)\",\"18 - 35\":\"rgb(199,233,192)\",\"35 - 53\":\"rgb(116,196,118)\",\"53 - 70\":\"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams topics heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"topics\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "f922f6c0-7620-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams countries pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams countries pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"countries_mentioned\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "31551a50-7621-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams plant products search",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 5\":\"rgb(247,252,245)\",\"5 - 10\":\"rgb(199,233,192)\",\"10 - 15\":\"rgb(116,196,118)\",\"15 - 20\":\"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams plant products search\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"plant_products_search\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "828b8ca0-7622-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams animal products search",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 1\":\"rgb(255,255,255)\",\"1 - 2\":\"rgb(217,217,217)\",\"2 - 3\":\"rgb(150,150,150)\",\"3 - 4\":\"rgb(82,82,82)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams animal products search\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greys\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"animal_products_search\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "fbaaef40-7622-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams interventions found heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(247,252,245)\",\"7 - 14\":\"rgb(199,233,192)\",\"14 - 21\":\"rgb(116,196,118)\",\"21 - 28\":\"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams interventions found heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"interventions_found\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "6e524890-7623-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams interventions found table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams interventions found table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"interventions_found\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "b2ef4930-7623-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams plant products search plot",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams plant products search plot\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"plant_products_search\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "27ca4b60-7624-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams animal products search plot",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams animal products search plot\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"animal_products_search\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "71fe4420-7624-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams measurements pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams measurements pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"top\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"measurements\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"No measurements\",\"missingBucket\":true,\"missingBucketLabel\":\"No measurements\"}}]}"
+            },
+            "id": "d0b2ff50-7625-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams measurements for crops pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams measurements for crops pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"measurements_for_crops\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "3e9640e0-7626-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams measurements for interventions pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams measurements for interventions pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"measurements_for_interventions\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "84092f20-7626-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams topics pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams topics pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"topics\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "bfca93f0-7626-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams world bank division regions",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams world bank division regions\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"world_bankdivision_regions\",\"size\":2000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "ae19e4a0-7629-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams geo regions",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams geo regions\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geo_regions\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "c791ab20-7629-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams outcomes heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 30\":\"rgb(255,255,204)\",\"30 - 60\":\"rgb(254,217,118)\",\"60 - 90\":\"rgb(253,141,60)\",\"90 - 120\":\"rgb(227,27,28)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams outcomes heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Yellow to Red\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"outcomes_found\",\"size\":200,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "e4475e90-7629-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams technology interventions",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 5\":\"rgb(247,251,255)\",\"5 - 9\":\"rgb(198,219,239)\",\"9 - 14\":\"rgb(107,174,214)\",\"14 - 18\":\"rgb(33,113,181)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams technology interventions\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Blues\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"technology intervention\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "6ba28db0-762a-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams technology interventions table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams technology interventions table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"technology intervention\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "84dab320-762a-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams socioeconomic interventions",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(255,255,255)\",\"7 - 14\":\"rgb(217,217,217)\",\"14 - 21\":\"rgb(150,150,150)\",\"21 - 28\":\"rgb(82,82,82)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams socioeconomic interventions\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greys\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"socioeconomic intervention\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "a23691a0-762a-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams socioeconomic interventions table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams socioeconomic interventions table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"socioeconomic intervention\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "b9ccedf0-762a-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams ecosystem interventions",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(247,252,245)\",\"7 - 13\":\"rgb(199,233,192)\",\"13 - 20\":\"rgb(116,196,118)\",\"20 - 26\":\"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams ecosystem interventions\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"ecosystem intervention\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "d429bd40-762a-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams ecosystem interventions table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams ecosystem interventions table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ecosystem intervention\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "e91cbef0-762a-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams storage interventions",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 1\":\"rgb(255,245,240)\",\"1 - 1\":\"rgb(252,187,161)\",\"1 - 2\":\"rgb(251,106,74)\",\"2 - 2\":\"rgb(203,24,29)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams storage interventions\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"storage intervention\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "05bcc780-762b-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams storage interventions table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams storage interventions table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"storage intervention\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "1be22eb0-762b-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams mechanisation interventions",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 1\":\"rgb(255,255,255)\",\"1 - 1\":\"rgb(217,217,217)\",\"1 - 2\":\"rgb(150,150,150)\",\"2 - 2\":\"rgb(82,82,82)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams mechanisation interventions\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greys\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"mechanisation intervention\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "3f1876f0-762b-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams mechanisation interventions table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams mechanisation interventions table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"mechanisation intervention\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "576244c0-762b-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams programs found",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 3\":\"rgb(247,251,255)\",\"3 - 5\":\"rgb(198,219,239)\",\"5 - 7\":\"rgb(107,174,214)\",\"7 - 9\":\"rgb(33,113,181)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams programs found\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Blues\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"programs_found\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "75a80e10-762b-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams programs found table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams programs found table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"programs_found\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "8aa485a0-762b-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams measurements for crops",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 1\":\"rgb(247,252,245)\",\"1 - 2\":\"rgb(199,233,192)\",\"2 - 3\":\"rgb(116,196,118)\",\"3 - 3\":\"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams measurements for crops\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"measurements_for_crops\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "ac2fb5f0-762b-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams measurements for crops table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams measurements for crops table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"measurements_for_crops\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "c2ed3e70-762b-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams measurements for interventions",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 1\":\"rgb(255,245,240)\",\"1 - 1\":\"rgb(252,187,161)\",\"1 - 2\":\"rgb(251,106,74)\",\"2 - 2\":\"rgb(203,24,29)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams measurements for interventions\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"measurements_for_interventions\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "e38471d0-762b-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams measurements for interventions table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams measurements for interventions table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"measurements_for_interventions\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "f9652ee0-762b-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams csv buttons",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams csv buttons\",\"type\":\"discover_tab_redirection\",\"params\":{},\"aggs\":[]}"
+            },
+            "id": "58314d30-762e-11e9-ad60-f5e9054ce9a9",
+            "type": "visualization",
+            "updated_at": "2019-05-14T10:09:44.345Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams population tags pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams population tags pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"population tags\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Undefined\"}}]}"
+            },
+            "id": "dce06f40-7717-11e9-b9b1-bd8372c7dfef",
+            "type": "visualization",
+            "updated_at": "2019-05-15T13:46:38.516Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams population tags heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 875\":\"rgb(255,255,204)\",\"875 - 1,750\":\"rgb(254,217,118)\",\"1,750 - 2,625\":\"rgb(253,141,60)\",\"2,625 - 3,500\":\"rgb(227,27,28)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams population tags heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Yellow to Red\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"population tags\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Undefined\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"timeRange\":{\"from\":\"now-100y\",\"to\":\"now\",\"mode\":\"relative\"},\"useNormalizedEsInterval\":true,\"interval\":\"y\",\"time_zone\":\"Europe/Minsk\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "fe740400-7717-11e9-b9b1-bd8372c7dfef",
+            "type": "visualization",
+            "updated_at": "2019-09-10T08:48:41.305Z",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams team tags",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams team tags\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"team_tags\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "72fcc540-8402-11e9-b9b1-bd8372c7dfef",
+            "type": "visualization",
+            "updated_at": "2019-06-01T00:16:06.548Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams dataset type",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams dataset type\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"dataset_type\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "8c2c1110-8402-11e9-b9b1-bd8372c7dfef",
+            "type": "visualization",
+            "updated_at": "2019-06-01T00:16:48.801Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams used for full text screening",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams used for full text screening\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"is_used_in_full_text_search\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "22ae1ec0-aede-11e9-91bb-99314e166a37",
+            "type": "visualization",
+            "updated_at": "2019-07-25T13:14:29.932Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams study design type",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams study design type\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"study_type\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"exclude\":\"\\\"\\\"\"}}]}"
+            },
+            "id": "fef9f3f0-aedd-11e9-91bb-99314e166a37",
+            "type": "visualization",
+            "updated_at": "2020-06-22T14:02:26.510Z",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams compared terms heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 5\":\"rgb(255,255,204)\",\"5 - 10\":\"rgb(254,217,118)\",\"10 - 15\":\"rgb(253,141,60)\",\"15 - 20\":\"rgb(227,27,28)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams compared terms heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Yellow to Red\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"compared_terms\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"useNormalizedEsInterval\":true,\"interval\":\"y\",\"time_zone\":\"Europe/Minsk\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "c72e8dd0-b867-11e9-91bb-99314e166a37",
+            "type": "visualization",
+            "updated_at": "2019-08-06T16:32:27.437Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams compared terms table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams compared terms table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"compared_terms\",\"size\":10000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "f03c59a0-b867-11e9-91bb-99314e166a37",
+            "type": "visualization",
+            "updated_at": "2019-08-06T16:33:36.313Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"articles_for_teams\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "Teams_gender_age_population_tags",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams_gender_age_population_tags\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"gender_age_population_tags\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "bffe9280-ff06-11ea-9e6d-ef5fa5a71e52",
+            "type": "visualization",
+            "updated_at": "2020-09-25T08:11:44.424Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"articles_for_teams\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "Teams_gender_age_population_tags_heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 225\":\"rgb(255,245,240)\",\"225 - 450\":\"rgb(252,187,161)\",\"450 - 675\":\"rgb(251,106,74)\",\"675 - 900\":\"rgb(203,24,29)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams_gender_age_population_tags_heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"gender_age_population_tags\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"year\",\"timeRange\":{\"from\":\"now-50y\",\"to\":\"now\",\"mode\":\"relative\"},\"useNormalizedEsInterval\":true,\"interval\":\"y\",\"time_zone\":\"Europe/Minsk\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}"
+            },
+            "id": "f3c852e0-ff06-11ea-9e6d-ef5fa5a71e52",
+            "type": "visualization",
+            "updated_at": "2020-09-25T08:13:11.310Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams_animals_found",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams_animals_found\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"animals_found\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "2afc4ae0-ff08-11ea-9e6d-ef5fa5a71e52",
+            "type": "visualization",
+            "updated_at": "2020-09-25T08:21:53.422Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "731e3fa0-760f-11e9-ad60-f5e9054ce9a9",
+                "title": "Teams_animals_found_table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"Teams_animals_found_table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"animals_found\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+            },
+            "id": "42eab240-ff08-11ea-9e6d-ef5fa5a71e52",
+            "type": "visualization",
+            "updated_at": "2020-09-25T08:22:33.572Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "fieldFormatMap": "{\"edit_url\":{\"id\":\"url\",\"params\":{\"urlTemplate\":\"http://ceres01.serverfarm.cornell.edu:8501/?_id={{value}}&_index=articles_covid&_es_host=ceres01.serverfarm.cornell.edu:9201&_kibana_host=ceres01.serverfarm.cornell.edu:5601\",\"labelTemplate\":\"Edit row\"}}}",
+                "fields": "[{\"name\":\"Covidence #\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"abstract\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"affiliation\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"animal_products_search\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"animal_products_search_details\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"animals_found\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"animals_found_details\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"author\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"comments\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"compared_terms\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"countries_mentioned\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"country_codes\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"dataset\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"dataset_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"districts\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"ecosystem intervention\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"edit_url\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"gender_age_population_tags\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"geo_regions\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"intervention_labels\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"interventions_found\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"is_used_in_full_text_search\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"journal\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"keywords_study_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"measurements\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"measurements_for_crops\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"measurements_for_interventions\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"mechanisation intervention\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"normalized_key_words\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"outcomes_details\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"outcomes_found\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"plant_products_search\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"plant_products_search_details\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"population tags\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"programs_found\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"provinces\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"socioeconomic intervention\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"storage intervention\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"study_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"tags\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"team_tags\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"technology intervention\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"title\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"topics\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"topics_hierarchy\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"topics_keywords\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"url\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"world_bankdivision_regions\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"year\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true}]",
+                "timeFieldName": "year",
+                "title": "articles_for_teams"
+            },
+            "id": "articles_for_teams",
+            "migrationVersion": {
+                "index-pattern": "6.5.0"
+            },
+            "type": "index-pattern",
+            "updated_at": "2020-09-25T08:53:42.539Z",
+            "version": 107
+        },
+        {
+            "attributes": {
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"*\"},\"filter\":[]}"
+                },
+                "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+                "panelsJSON": "[{\"embeddableConfig\":{\"sort\":[\"year\",\"asc\"]},\"gridData\":{\"x\":0,\"y\":43,\"w\":48,\"h\":19,\"i\":\"57\"},\"id\":\"731e3fa0-760f-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"57\",\"type\":\"search\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":48,\"h\":14,\"i\":\"58\"},\"id\":\"c63546e0-7612-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"58\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":14,\"w\":9,\"h\":8,\"i\":\"59\"},\"id\":\"3b59a290-761d-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"59\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":22,\"w\":15,\"h\":7,\"i\":\"60\"},\"id\":\"a3ef02f0-761d-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"60\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":31,\"y\":14,\"w\":17,\"h\":15,\"i\":\"62\"},\"id\":\"9b959a00-761e-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"62\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":29,\"w\":10,\"h\":14,\"i\":\"63\"},\"id\":\"52cc1140-761f-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"63\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 175\":\"rgb(247,251,255)\",\"175 - 350\":\"rgb(198,219,239)\",\"350 - 525\":\"rgb(107,174,214)\",\"525 - 700\":\"rgb(33,113,181)\"},\"legendOpen\":true}},\"gridData\":{\"x\":10,\"y\":29,\"w\":14,\"h\":14,\"i\":\"64\"},\"id\":\"8cd45460-761f-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"64\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":29,\"w\":24,\"h\":14,\"i\":\"65\"},\"id\":\"2ef5c300-7620-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"65\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":82,\"w\":26,\"h\":10,\"i\":\"66\"},\"id\":\"c98e2d80-7620-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"66\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":92,\"w\":26,\"h\":14,\"i\":\"67\"},\"id\":\"f922f6c0-7620-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"67\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":26,\"y\":82,\"w\":22,\"h\":24,\"i\":\"68\"},\"id\":\"31551a50-7621-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"68\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":106,\"w\":24,\"h\":15,\"i\":\"70\"},\"id\":\"828b8ca0-7622-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"70\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":121,\"w\":24,\"h\":15,\"i\":\"72\"},\"id\":\"fbaaef40-7622-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"72\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":151,\"w\":24,\"h\":15,\"i\":\"74\"},\"id\":\"6e524890-7623-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"74\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":151,\"w\":24,\"h\":15,\"i\":\"75\"},\"id\":\"b2ef4930-7623-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"75\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":106,\"w\":24,\"h\":15,\"i\":\"76\"},\"id\":\"27ca4b60-7624-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"76\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":121,\"w\":24,\"h\":15,\"i\":\"77\"},\"id\":\"71fe4420-7624-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"77\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":166,\"w\":8,\"h\":18,\"i\":\"78\"},\"id\":\"d0b2ff50-7625-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"78\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":8,\"y\":166,\"w\":12,\"h\":8,\"i\":\"79\"},\"id\":\"3e9640e0-7626-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"79\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":8,\"y\":174,\"w\":12,\"h\":10,\"i\":\"80\"},\"id\":\"84092f20-7626-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"80\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":20,\"y\":166,\"w\":28,\"h\":18,\"i\":\"81\"},\"id\":\"bfca93f0-7626-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"81\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":184,\"w\":12,\"h\":16,\"i\":\"82\"},\"id\":\"ae19e4a0-7629-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"82\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":12,\"y\":184,\"w\":17,\"h\":16,\"i\":\"83\"},\"id\":\"c791ab20-7629-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"83\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":29,\"y\":184,\"w\":19,\"h\":16,\"i\":\"84\"},\"id\":\"e4475e90-7629-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"84\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":200,\"w\":24,\"h\":15,\"i\":\"85\"},\"id\":\"6ba28db0-762a-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"85\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":200,\"w\":24,\"h\":15,\"i\":\"86\"},\"id\":\"84dab320-762a-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"86\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":215,\"w\":24,\"h\":15,\"i\":\"87\"},\"id\":\"a23691a0-762a-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"87\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":215,\"w\":24,\"h\":15,\"i\":\"88\"},\"id\":\"b9ccedf0-762a-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"88\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":230,\"w\":24,\"h\":15,\"i\":\"89\"},\"id\":\"d429bd40-762a-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"89\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":230,\"w\":24,\"h\":15,\"i\":\"90\"},\"id\":\"e91cbef0-762a-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"90\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":245,\"w\":24,\"h\":15,\"i\":\"91\"},\"id\":\"05bcc780-762b-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"91\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":245,\"w\":24,\"h\":15,\"i\":\"92\"},\"id\":\"1be22eb0-762b-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"92\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":260,\"w\":24,\"h\":15,\"i\":\"93\"},\"id\":\"3f1876f0-762b-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"93\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":260,\"w\":24,\"h\":15,\"i\":\"94\"},\"id\":\"576244c0-762b-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"94\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":275,\"w\":24,\"h\":15,\"i\":\"95\"},\"id\":\"75a80e10-762b-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"95\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":275,\"w\":24,\"h\":15,\"i\":\"96\"},\"id\":\"8aa485a0-762b-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"96\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":290,\"w\":24,\"h\":15,\"i\":\"97\"},\"id\":\"ac2fb5f0-762b-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"97\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":290,\"w\":24,\"h\":15,\"i\":\"98\"},\"id\":\"c2ed3e70-762b-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"98\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":305,\"w\":24,\"h\":15,\"i\":\"99\"},\"id\":\"e38471d0-762b-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"99\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":305,\"w\":24,\"h\":15,\"i\":\"100\"},\"id\":\"f9652ee0-762b-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"100\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":15,\"y\":14,\"w\":16,\"h\":5,\"i\":\"101\"},\"id\":\"58314d30-762e-11e9-ad60-f5e9054ce9a9\",\"panelIndex\":\"101\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":17,\"y\":62,\"w\":12,\"h\":10,\"i\":\"102\"},\"id\":\"dce06f40-7717-11e9-b9b1-bd8372c7dfef\",\"panelIndex\":\"102\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":29,\"y\":62,\"w\":19,\"h\":10,\"i\":\"103\"},\"id\":\"fe740400-7717-11e9-b9b1-bd8372c7dfef\",\"panelIndex\":\"103\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":15,\"y\":19,\"w\":8,\"h\":10,\"i\":\"104\"},\"id\":\"72fcc540-8402-11e9-b9b1-bd8372c7dfef\",\"panelIndex\":\"104\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":9,\"y\":14,\"w\":6,\"h\":8,\"i\":\"105\"},\"id\":\"8c2c1110-8402-11e9-b9b1-bd8372c7dfef\",\"panelIndex\":\"105\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":true}},\"gridData\":{\"x\":23,\"y\":19,\"w\":8,\"h\":10,\"i\":\"106\"},\"id\":\"22ae1ec0-aede-11e9-91bb-99314e166a37\",\"panelIndex\":\"106\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":62,\"w\":17,\"h\":10,\"i\":\"107\"},\"id\":\"fef9f3f0-aedd-11e9-91bb-99314e166a37\",\"panelIndex\":\"107\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":320,\"w\":24,\"h\":15,\"i\":\"109\"},\"id\":\"c72e8dd0-b867-11e9-91bb-99314e166a37\",\"panelIndex\":\"109\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":320,\"w\":24,\"h\":15,\"i\":\"110\"},\"id\":\"f03c59a0-b867-11e9-91bb-99314e166a37\",\"panelIndex\":\"110\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":72,\"w\":17,\"h\":10,\"i\":\"114\"},\"id\":\"bffe9280-ff06-11ea-9e6d-ef5fa5a71e52\",\"panelIndex\":\"114\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":17,\"y\":72,\"w\":31,\"h\":10,\"i\":\"115\"},\"id\":\"f3c852e0-ff06-11ea-9e6d-ef5fa5a71e52\",\"panelIndex\":\"115\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":136,\"w\":24,\"h\":15,\"i\":\"116\"},\"id\":\"2afc4ae0-ff08-11ea-9e6d-ef5fa5a71e52\",\"panelIndex\":\"116\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"gridData\":{\"x\":24,\"y\":136,\"w\":24,\"h\":15,\"i\":\"117\"},\"version\":\"6.6.0\",\"panelIndex\":\"117\",\"type\":\"visualization\",\"id\":\"42eab240-ff08-11ea-9e6d-ef5fa5a71e52\",\"embeddableConfig\":{}}]",
+                "refreshInterval": {
+                    "pause": true,
+                    "value": 0
+                },
+                "timeFrom": "now-50y",
+                "timeRestore": true,
+                "timeTo": "now",
+                "title": "Teams_Cornell_Agriculture_Dashboard",
+                "version": 1
+            },
+            "id": "89c687e0-760e-11e9-ad60-f5e9054ce9a9",
+            "type": "dashboard",
+            "updated_at": "2020-09-25T08:23:30.355Z",
+            "version": 29
+        }
+    ],
+    "version": "6.6.0"
+}
