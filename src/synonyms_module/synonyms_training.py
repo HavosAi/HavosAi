@@ -5,6 +5,7 @@ from gensim.models import FastText
 import gensim
 import pickle
 from time import time
+from utilities import excel_reader
 
 class SynonymsTrainer:
 
@@ -14,6 +15,7 @@ class SynonymsTrainer:
         self.columns_to_use_as_keywords = columns_to_use_as_keywords
         self.columns_to_use_for_sentences = columns_to_use_for_sentences
         self.folder = folder
+        self.train_sentences = None
 
     def save_model(self, model, folder, model_name):
         if not os.path.exists(folder):
@@ -21,35 +23,51 @@ class SynonymsTrainer:
         if model != None:
             model.save(os.path.join(folder, model_name))
 
-    def train_phrases(self, articles_df):
+    def get_filenames(self, file_or_folder_with_dataset):
+        files = []
+        if os.path.isdir(file_or_folder_with_dataset):
+            files.extend(os.listdir(file_or_folder_with_dataset))
+        else:
+            files.append(file_or_folder_with_dataset)
+        return files
+
+    def train_phrases(self, file_or_folder_with_dataset):
         print("Started training phrases")
         t0 = time()
         if os.path.exists(os.path.join(self.folder, "phrases_bigram.model")) and os.path.exists(os.path.join(self.folder, "phrases_3gram.model")):
             self.phrases = Phraser.load(os.path.join(self.folder, "phrases_bigram.model"))
             self.phrases_3gram = Phraser.load(os.path.join(self.folder, "phrases_3gram.model"))
         else:
+            files = self.get_filenames(file_or_folder_with_dataset)
+            all_columns = list(set(self.columns_to_use_for_sentences + self.columns_to_use_as_keywords))
+            _excel_reader = excel_reader.ExcelReader()
             phrase_sentences = []
-            for i in range(len(articles_df)):
-                if i % 5000 == 0 or i == len(articles_df) - 1:
-                    print("Processed %d articles" % i)
-                for column in self.columns_to_use_for_sentences:
-                    text = ""
-                    if column.lower() == "title":
-                        text = articles_df["title"].values[i].lower() if articles_df["title"].values[i].isupper() else articles_df["title"].values[i]
-                    text = articles_df[column].values[i]
-                    text = text_normalizer.remove_accented_chars(text)
-                    phrase_sentences.extend(
-                        text_normalizer.normalize_sentences(
-                            text_normalizer.tokenize_words(text)))
-                keywords = ""
-                for column in self.columns_to_use_as_keywords:
-                    keywords = keywords + articles_df[column].values[i] + " ; "
-                keywords = text_normalizer.remove_accented_chars(keywords)
+            for filename in files:
+                articles_df = _excel_reader.read_df_from_excel(os.path.join(file_or_folder_with_dataset, filename))
+                for column in all_columns:
+                    if column not in articles_df.columns:
+                        articles_df[column] = ""
+                for i in range(len(articles_df)):
+                    if i % 5000 == 0 or i == len(articles_df) - 1:
+                        print("Processed %d articles" % i)
+                    for column in self.columns_to_use_for_sentences:
+                        text = ""
+                        if column.lower() == "title":
+                            text = articles_df["title"].values[i].lower() if articles_df["title"].values[i].isupper() else articles_df["title"].values[i]
+                        text = articles_df[column].values[i]
+                        text = text_normalizer.remove_accented_chars(text)
+                        phrase_sentences.extend(
+                            text_normalizer.normalize_sentences(
+                                text_normalizer.tokenize_words(text)))
+                    keywords = ""
+                    for column in self.columns_to_use_as_keywords:
+                        keywords = keywords + articles_df[column].values[i] + " ; "
+                    keywords = text_normalizer.remove_accented_chars(keywords)
 
-                if keywords.strip() != "":
-                    phrase_sentences.extend(
-                        text_normalizer.normalize_sentences(
-                            text_normalizer.tokenize_words(keywords)))
+                    if keywords.strip() != "":
+                        phrase_sentences.extend(
+                            text_normalizer.normalize_sentences(
+                                text_normalizer.tokenize_words(keywords)))
 
             self.phrases = Phraser(Phrases(phrase_sentences))
             self.phrases_3gram = Phraser(Phrases(self.phrases[phrase_sentences]))
@@ -71,24 +89,32 @@ class SynonymsTrainer:
         self.save_model(self.google_model, os.path.join(folder, "google_plus_our_dataset/"), "google_plus_our_dataset.model")
         self.save_model(self.fast_text_model, os.path.join(folder, "fast_text_our_dataset/"), "fast_text_our_dataset.model")
 
-    def get_phrased_sentences(self, articles_df, use_3_grams):
+    def get_phrased_sentences(self, file_or_folder_with_dataset, use_3_grams):
         print("Started processing train corpus")
         t0 = time()
         train_sentences = []
-        for i in range(len(articles_df)):
-            if i % 5000 == 0 or i == len(articles_df) - 1:
-                print("Processed %d articles" % i)
-            sentence = []
-            for column in self.columns_to_use_for_sentences:
-                text = ""
-                if column.lower() == "title":
-                    text = articles_df["title"].values[i].lower() if articles_df["title"].values[i].isupper() else articles_df["title"].values[i]
-                text = articles_df[column].values[i]
-                text = text_normalizer.remove_accented_chars(text)
-                sentence.extend(
-                    text_normalizer.get_phrased_sentence(text,
-                    self.phrases, self.phrases_3gram if use_3_grams else None))
-            train_sentences.append(sentence)
+        files = self.get_filenames(file_or_folder_with_dataset)
+        all_columns = list(set(self.columns_to_use_for_sentences + self.columns_to_use_as_keywords))
+        _excel_reader = excel_reader.ExcelReader()
+        for filename in files:
+            articles_df = _excel_reader.read_df_from_excel(os.path.join(file_or_folder_with_dataset, filename))
+            for column in all_columns:
+                if column not in articles_df.columns:
+                    articles_df[column] = ""
+            for i in range(len(articles_df)):
+                if i % 5000 == 0 or i == len(articles_df) - 1:
+                    print("Processed %d articles" % i)
+                sentence = []
+                for column in self.columns_to_use_for_sentences:
+                    text = ""
+                    if column.lower() == "title":
+                        text = articles_df["title"].values[i].lower() if articles_df["title"].values[i].isupper() else articles_df["title"].values[i]
+                    text = articles_df[column].values[i]
+                    text = text_normalizer.remove_accented_chars(text)
+                    sentence.extend(
+                        text_normalizer.get_phrased_sentence(text,
+                        self.phrases, self.phrases_3gram if use_3_grams else None))
+                train_sentences.append(sentence)
         print("Finished processing train corpus: %0.2f s"%(time() - t0))
         return train_sentences
 
@@ -97,11 +123,6 @@ class SynonymsTrainer:
         for sent in train_sentences:
             new_sentences.append([word for word in sent if not text_normalizer.is_abbreviation(word)])
         return new_sentences
-
-    def prepare_sentences_for_learning(self, articles_df):
-        self.train_sentences = self.get_phrased_sentences(articles_df, False)
-        self.train_sentences_without_abbreviations = self.filter_abbreviations(self.train_sentences)
-        self.train_sentences_3grams = self.get_phrased_sentences(articles_df, True)
 
     def train_fast_text_model(self):
         print("Fast text training started...")
@@ -145,12 +166,17 @@ class SynonymsTrainer:
             self.save_model(self.google_2_and_3_bigrams_model, os.path.join(self.folder, "google_2_and_3_bigrams_our_dataset/"), "google_2_and_3_bigrams_our_dataset.model")
         print("Google 2 and 3 grams model training finished: %0.2f s"%(time() - t0))
 
-    def train_models(self, all_models=True, google_model=False, google_model_2_3_grams=False, fast_text=False):
+    def train_models(self, file_or_folder_with_dataset, all_models=True, google_model=False, google_model_2_3_grams=False, fast_text=False):
         if all_models or google_model:
+            self.train_sentences = self.get_phrased_sentences(file_or_folder_with_dataset, False)
             self.train_google_model()
         if all_models or google_model_2_3_grams:
+            if not self.train_sentences:
+                self.train_sentences = self.get_phrased_sentences(file_or_folder_with_dataset, False)
+            self.train_sentences_3grams = self.get_phrased_sentences(file_or_folder_with_dataset, True)
             self.train_google_2_and_3_grams_model()
         if all_models or fast_text:
+            self.train_sentences_without_abbreviations = self.filter_abbreviations(self.train_sentences)
             self.train_fast_text_model()
 
     def find_inverted_index_for_n_grams_sentences(self):
