@@ -138,7 +138,7 @@ class WebCrawlerBase:
     def prepare_dataset(self, folder, filename):
         df = self.prepare_initial_dataset(folder)
         for i in range(len(df)):
-            with open(os.path.join(folder, df["article_name"].values[i]), encoding="utf-8") as f:
+            with open(os.path.join(folder, df["article_name"].values[i]), encoding="utf-8", errors='ignore') as f:
                 try:
                     meta_doc = self.process_file(f)
                     df = self.fill_df_fields(meta_doc, df, i)
