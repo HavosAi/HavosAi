@@ -5,6 +5,11 @@ from webscrapping import webcrawler_world_bank
 from webscrapping import webcrawler_world_bank_ieg
 from webscrapping import webcrawler_iadb
 from webscrapping import webcrawler_eldis
+from webscrapping import webcrawler_care_eval
+from webscrapping import webcrawler_cgdev
+from webscrapping import webcrawler_google_scholar
+from webscrapping import webcrawler_usaid_ll
+from webscrapping import webcrawler_gef
 from webscrapping import webcrawler_gardian_json
 from webscrapping import webcrawler_cee
 from webscrapping import webcrawler_cast
@@ -50,6 +55,11 @@ class WebcrawlerMain:
         "http://ieg.worldbankgroup.org": webscrapping.webcrawler_world_bank_ieg.WebCrawlerWorldBankIEG(), #new REAPER_1
         "http://publications.iadb.org": webscrapping.webcrawler_iadb.WebCrawlerIADB(), #new REAPER_2
         "http://www.eldis.org/": webscrapping.webcrawler_eldis.WebCrawlerEldis(), #new REAPER_3
+        "http://careevaluations.org": webscrapping.webcrawler_care_eval.WebCrawlerCareEval(), #new REAPER_4
+        "https://www.cgdev.org": webscrapping.webcrawler_cgdev.WebCrawlerCGDev(), #new REAPER_5
+        "https://scholar.google.com": webscrapping.webcrawler_google_scholar.WebCrawlerGoogleScholar(), #new REAPER_6
+        "https://usaidlearninglab.org": webscrapping.webcrawler_usaid_ll.WebCrawlerUSAIDLearnLab(), #new REAPER_9
+        "https://www.gefieo.org": webscrapping.webcrawler_gef.WebCrawlerGEF(), #new REAPER_10
         "http://gardian.bigdata.cgiar.org": webscrapping.webcrawler_gardian_json.WebCrawlerGARDIAN_JSON(),
         "http://www.environmentalevidence.org": webscrapping.webcrawler_cee.WebCrawlerCEE(),
         "http://www.cast-science.org": webscrapping.webcrawler_cast.WebCrawlerCAST(),

@@ -4,27 +4,27 @@ import re
 import os
 
 
-class WebCrawlerWorldBankIEG(WebCrawlerBase):
+class WebCrawlerCareEval(WebCrawlerBase):
     def __init__(self):
         WebCrawlerBase.__init__(self)
-        self.domain_name = "https://ieg.worldbankgroup.org"
-        self.start_page = 0
+        self.domain_name = "http://careevaluations.org"
 
     def prepare_query(self, query, page):
-        if re.search("page=\d+", query) == None:
-            return query + "&page=%d" % (page)
-        return re.sub("page=\d+", "page=%d" % (page), query)
+        query, params = query.split("?")
+        if re.search("page/\d+", query) == None:
+            return query + "page/%d" % (page) + '?' + params
+        return re.sub("page/\d+", "page/%d" % (page), query) + '?' + params
 
     def extract_links(self, doc):
-        return [item['href'] for item in doc.select('h3 > a')]
+        return [item['href'] for item in doc.select('h2 > a')]
 
     def extract_articles(self, doc):
-        return doc.findAll(attrs={"class": "post views-row"})
+        return doc.findAll(attrs={"class": "fl-post-text"})
 
     def process_article(self, article, folder_to_save):
         article_url = self.extract_links(article)[0]
-        article_id = article_url.split('/')[-1]
-        file_path = os.path.join(folder_to_save, f'{article_id}.html')
+        article_id = article_url.split('/')[-2]
+        file_path = os.path.join(folder_to_save, f'{article_id[:50]}.html')
 
         if file_path is not None:
             print(f'Save {article_url} to {file_path}')
@@ -59,11 +59,15 @@ class WebCrawlerWorldBankIEG(WebCrawlerBase):
         return processed_links, len(articles) if len(processed_links) > 0 else 0, added_ids_from_previous_page
 
     def fill_df_fields(self, meta_doc, df, i):
-        df["source_name"].values[i] = "WorldBankIEG"
-        df["year"].values[i] = self.extract_year(meta_doc.find(attrs={"class": "date"}).get_text().strip(),
-                                                 df["year"].values[i])
-        df["abstract"].values[i] = meta_doc.find(attrs={"class": "fullcontent"}).get_text().strip()
-        df["title"].values[i] = meta_doc.find('h3').get_text().strip()
-        df["url"].values[i] = self.domain_name + "/" + self.extract_links(meta_doc)[0] + '?show=full'
-        df["fulltext_links"].values[i] = self.domain_name + "/" + self.extract_links(meta_doc)[0] + '?show=full'
+        df["source_name"].values[i] = "Care Evaluations"
+        df["title"].values[i] = meta_doc.find("h2").text.strip()
+        df["abstract"].values[i] = meta_doc.find(class_="fl-post-excerpt").text.strip()
+        doc_post_data = meta_doc.find(class_="fl-post-meta")
+        for li in doc_post_data.findAll('li'):
+            key, value = li.text.split(':')
+            if key == "Publication Date":
+                df["year"].values[i] = self.extract_year(value, df["year"].values[i])
+            if key == "Keywords":
+                df["keywords"].values[i] = value
+        df["fulltext_links"].values[i] = self.extract_links(meta_doc)[0]
         return df
