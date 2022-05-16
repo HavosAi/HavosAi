@@ -15,12 +15,17 @@ import pickle
 from webscrapping import webcrawler_logger
 
 class WebCrawlerBase:
+    # SELENIUM_DRIVER_PATH = '/usr/bin/chromedriver'
     SELENIUM_DRIVER_PATH = r'C:\Users\Volha_Skidan\Desktop\chromedriver_win32\chromedriver'
 
     def __init__(self, headers = None):
         self.headers = headers
         self.start_page = 1
         self.use_selenium = False
+        self.chromeOptions = webdriver.ChromeOptions()
+        self.chromeOptions.add_argument("--headless")
+        self.chromeOptions.add_argument("--remote-debugging-port=9222")
+        self.chromeOptions.add_argument('--no-sandbox')
 
     def sleep(self, duration):
         print(f'sleep {duration}s')
@@ -62,7 +67,7 @@ class WebCrawlerBase:
             return response.content
 
         except:
-            print("The problem with url %s" % url)
+            print("(Requests) The problem with url %s" % url)
             try:
                 self._webcrawler_logger.update_status_for_query(url, "Finished with errors",
                                                                 "The problem with url %s" % url)
@@ -89,7 +94,7 @@ class WebCrawlerBase:
                 print("Saved.")
             return html
         except:
-            print("The problem with url %s" % url)
+            print("(Selenium) The problem with url %s" % url)
             try:
                 self._webcrawler_logger.update_status_for_query(url, "Finished with errors",
                                                                 "The problem with url %s" % url)
