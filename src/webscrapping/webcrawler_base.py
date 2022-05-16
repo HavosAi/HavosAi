@@ -3,6 +3,7 @@ from requests import get
 from bs4 import BeautifulSoup
 import time
 from pathlib import Path
+from selenium import webdriver
 import json
 import re
 import os
@@ -14,10 +15,12 @@ import pickle
 from webscrapping import webcrawler_logger
 
 class WebCrawlerBase:
+    SELENIUM_DRIVER_PATH = r'C:\Users\Volha_Skidan\Desktop\chromedriver_win32\chromedriver'
 
     def __init__(self, headers = None):
         self.headers = headers
         self.start_page = 1
+        self.use_selenium = False
 
     def sleep(self, duration):
         print(f'sleep {duration}s')
@@ -25,6 +28,75 @@ class WebCrawlerBase:
         
     def parse(self, text, parser='html.parser'):
         return BeautifulSoup(text, parser)
+
+    def fetch_request(self, url, file_path=None, session=None, max_attempts=10, timeout = 100, custom_headers=None,
+            return_json=False):
+        try:
+            for attempt in range(max_attempts):
+                if session is not None:
+                    response = session.get(url, headers=custom_headers)
+                else:
+                    response = get(url, headers=custom_headers, timeout=timeout)
+
+                # handle HTTP 429 Too Many Requests
+                if response.status_code == 429:
+                    delay = (attempt + 1) * 10
+                    print(f'Retrying in {delay} seconds')
+                    time.sleep(delay)
+                else:
+                    break
+            response.raise_for_status()
+            print("Url was searched")
+
+            if session is not None:
+                print(f'Session cookies: {len(session.cookies)}')
+
+            if return_json:
+                print("Response converted to json")
+                return response.json()
+
+            if file_path is not None:
+                with open(file_path, 'wb') as file:
+                    file.write(response.content)
+
+            return response.content
+
+        except:
+            print("The problem with url %s" % url)
+            try:
+                self._webcrawler_logger.update_status_for_query(url, "Finished with errors",
+                                                                "The problem with url %s" % url)
+            except:
+                pass
+        print("Some error url")
+        return ""
+
+    def fetch_selenium(self, url, file_path):
+        try:
+            driver = webdriver.Chrome(executable_path=self.SELENIUM_DRIVER_PATH)
+            driver.get(url)
+            delay = 5
+            print(f'Waiting time for loading: {delay} seconds')
+            time.sleep(delay)
+            html = driver.page_source
+            driver.close()
+
+            print("Url was searched")
+            if file_path is not None:
+                print(file_path)
+                with open(file_path, 'w') as file:
+                    file.write(html)
+                print("Saved.")
+            return html
+        except:
+            print("The problem with url %s" % url)
+            try:
+                self._webcrawler_logger.update_status_for_query(url, "Finished with errors",
+                                                                "The problem with url %s" % url)
+            except:
+                pass
+        print("Some error url")
+        return ""
 
     def fetch(self, url, file_path=None, session=None, max_attempts=10, timeout = 100, custom_headers=None,
             return_json=False):
@@ -38,44 +110,11 @@ class WebCrawlerBase:
                 return None
         else: 
             print(f'Fetch {url}')
-        try:
-            for attempt in range(max_attempts):
-                if session is not None:
-                    response = session.get(url, headers=custom_headers)
-                else:
-                    response = get(url, headers=custom_headers, timeout = timeout)
 
-                # handle HTTP 429 Too Many Requests
-                if response.status_code == 429:
-                    delay = (attempt + 1) * 10
-                    print(f'Retrying in {delay} seconds')
-                    time.sleep(delay)
-                else:   
-                    break
-            response.raise_for_status()
-            print("Url was searched")
-        
-            if session is not None:
-                print(f'Session cookies: {len(session.cookies)}')
-
-            if return_json:
-                print("Response converted to json")
-                return response.json()
-                
-            if file_path is not None:
-                with open(file_path, 'wb') as file:
-                    file.write(response.content)
-
-            return response.content
-
-        except:
-            print("The problem with url %s"%url)
-            try:
-                self._webcrawler_logger.update_status_for_query(url, "Finished with errors", "The problem with url %s"%url)
-            except:
-                pass
-        print("Some error url")
-        return ""
+        if not self.use_selenium:
+            return self.fetch_request(url, file_path, session, max_attempts, timeout, custom_headers, return_json)
+        else:
+            return self.fetch_selenium(url, file_path)
 
     def process_page(self, page, query, folder_to_save, added_ids_from_previous_page):
         print(f'\n\nPage {page}')
@@ -83,7 +122,7 @@ class WebCrawlerBase:
         doc = self.parse(self.fetch(
             self.prepare_query(query, page), custom_headers = self.headers
         ))
-        
+
         articles =  self.extract_links(doc)
         processed_links = []
         

@@ -54,14 +54,14 @@ class WebcrawlerMain:
         "http://openknowledge.worldbank.org": webscrapping.webcrawler_world_bank.WebCrawlerWorldBank(),
         "http://ieg.worldbankgroup.org": webscrapping.webcrawler_world_bank_ieg.WebCrawlerWorldBankIEG(), #new REAPER_1
         "http://publications.iadb.org": webscrapping.webcrawler_iadb.WebCrawlerIADB(), #new REAPER_2
-        "http://www.eldis.org/": webscrapping.webcrawler_eldis.WebCrawlerEldis(), #new REAPER_3
+        "http://www.eldis.org": webscrapping.webcrawler_eldis.WebCrawlerEldis(), #new REAPER_3
         "http://careevaluations.org": webscrapping.webcrawler_care_eval.WebCrawlerCareEval(), #new REAPER_4
-        "https://www.cgdev.org": webscrapping.webcrawler_cgdev.WebCrawlerCGDev(), #new REAPER_5
-        "https://scholar.google.com": webscrapping.webcrawler_google_scholar.WebCrawlerGoogleScholar(), #new REAPER_6
-        "https://usaidlearninglab.org": webscrapping.webcrawler_usaid_ll.WebCrawlerUSAIDLearnLab(), #new REAPER_9
-        "https://www.gefieo.org": webscrapping.webcrawler_gef.WebCrawlerGEF(), #new REAPER_10
+        "http://www.cgdev.org": webscrapping.webcrawler_cgdev.WebCrawlerCGDev(), #new REAPER_5
+        "http://scholar.google.com": webscrapping.webcrawler_google_scholar.WebCrawlerGoogleScholar(), #new REAPER_6
+        "http://usaidlearninglab.org": webscrapping.webcrawler_usaid_ll.WebCrawlerUSAIDLearnLab(), #new REAPER_9
+        "http://www.gefieo.org": webscrapping.webcrawler_gef.WebCrawlerGEF(), #new REAPER_10
         "http://gardian.bigdata.cgiar.org": webscrapping.webcrawler_gardian_json.WebCrawlerGARDIAN_JSON(),
-        "http://www.environmentalevidence.org": webscrapping.webcrawler_cee.WebCrawlerCEE(),
+        # "http://www.environmentalevidence.org": webscrapping.webcrawler_cee.WebCrawlerCEE(), # OOT, Legacy
         "http://www.cast-science.org": webscrapping.webcrawler_cast.WebCrawlerCAST(),
         "http://www.poverty-action.org": webscrapping.webcrawler_ipa.WebCrawlerIPA(),
         "http://www.odi.org": webscrapping.webcrawler_odi.WebCrawlerODI(),
