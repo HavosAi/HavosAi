@@ -10,6 +10,8 @@ class WebCrawlerIFPRI(WebCrawlerBase):
         self.use_selenium = True
 
     def prepare_query(self, query, page):
+        if re.search("/page/\d+", query) == None:
+            return query + "/page/%d"%page
         return re.sub("/page/\d+", "/page/%d"%(page), query)
 
     def extract_links(self, doc):

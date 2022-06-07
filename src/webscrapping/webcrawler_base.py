@@ -15,8 +15,8 @@ import pickle
 from webscrapping import webcrawler_logger
 
 class WebCrawlerBase:
-    # SELENIUM_DRIVER_PATH = '/usr/bin/chromedriver'
-    SELENIUM_DRIVER_PATH = r'C:\Users\Volha_Skidan\Desktop\chromedriver_win32\chromedriver'
+    SELENIUM_DRIVER_PATH = '/usr/bin/chromedriver'
+    # SELENIUM_DRIVER_PATH = r'C:\Users\Volha_Skidan\Desktop\chromedriver_win32\chromedriver'
 
     def __init__(self, headers = None):
         self.headers = headers

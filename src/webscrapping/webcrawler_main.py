@@ -60,6 +60,7 @@ class WebcrawlerMain:
         "http://scholar.google.com": webscrapping.webcrawler_google_scholar.WebCrawlerGoogleScholar(), #new REAPER_6
         "http://usaidlearninglab.org": webscrapping.webcrawler_usaid_ll.WebCrawlerUSAIDLearnLab(), #new REAPER_9
         "http://www.gefieo.org": webscrapping.webcrawler_gef.WebCrawlerGEF(), #new REAPER_10
+        "https://dec.usaid.gov": webscrapping.webcrawler_usaid_dec.WebCrawlerUsaidDec(), #replacement for legacy DEC API webcrawler_usaid.WebCrawlerUsaid(),
         "http://gardian.bigdata.cgiar.org": webscrapping.webcrawler_gardian_json.WebCrawlerGARDIAN_JSON(),
         # "http://www.environmentalevidence.org": webscrapping.webcrawler_cee.WebCrawlerCEE(), # OOT, Legacy
         "http://www.cast-science.org": webscrapping.webcrawler_cast.WebCrawlerCAST(),
@@ -78,7 +79,6 @@ class WebcrawlerMain:
         "http://datad.aau.org": webscrapping.webcrawler_datad.WebCrawlerDATAD(),
         "http://www.campbellcollaboration.org": webscrapping.webcrawler_campbell.WebCrawlerCampbell(),
         "http://www.cirad.fr": webscrapping.webcrawler_cirad_fr.WebCrawlerCIRAD_fr(),
-        "http://dec.usaid.gov": webscrapping.webcrawler_usaid.WebCrawlerUsaid(),
         "http://repo.mel.cgiar.org": webcrawler_repo_mel_cgiar.WebCrawlerRepoMelCGIAR(),
         "http://cgspace.cgiar.org": webcrawler_cgspace.WebCrawlerCGSPACE(),
         "http://devtracker.dfid.gov.uk": webcrawler_dfid_devtracker.WebCrawlerDFIDDevtracker(),

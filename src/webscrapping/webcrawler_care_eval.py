@@ -10,7 +10,9 @@ class WebCrawlerCareEval(WebCrawlerBase):
         self.domain_name = "http://careevaluations.org"
 
     def prepare_query(self, query, page):
-        query, params = query.split("?")
+        params = ''
+        if '?' in query:
+            query, params = query.split("?")
         if re.search("page/\d+", query) == None:
             return query + "page/%d" % (page) + '?' + params
         return re.sub("page/\d+", "page/%d" % (page), query) + '?' + params
