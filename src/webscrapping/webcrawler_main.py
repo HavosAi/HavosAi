@@ -10,6 +10,7 @@ from webscrapping import webcrawler_cgdev
 from webscrapping import webcrawler_google_scholar
 from webscrapping import webcrawler_usaid_ll
 from webscrapping import webcrawler_gef
+from webscrapping import webcrawler_usaid_dec
 from webscrapping import webcrawler_gardian_json
 from webscrapping import webcrawler_cee
 from webscrapping import webcrawler_cast
