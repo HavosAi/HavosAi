@@ -23,7 +23,7 @@ class WebCrawlerUsaidDec(WebCrawlerBase):
     def process_all_links(self, articles, folder_to_save):
         processed_links = []
         try:
-            driver = webdriver.Chrome(executable_path=self.SELENIUM_DRIVER_PATH)
+            driver = webdriver.Chrome(executable_path=self.SELENIUM_DRIVER_PATH, chrome_options=self.chromeOptions)
             for article in articles:
                 try:
                     if article in processed_links:
@@ -62,7 +62,7 @@ class WebCrawlerUsaidDec(WebCrawlerBase):
         all_pages = []
         if len(self.check_url(query)) == 0:
             try:
-                driver = webdriver.Chrome(executable_path=self.SELENIUM_DRIVER_PATH)
+                driver = webdriver.Chrome(executable_path=self.SELENIUM_DRIVER_PATH, chrome_options=self.chromeOptions)
                 driver.get(query)
                 while True:
                     print(f'Waiting time for loading: {self.delay} seconds')
@@ -82,7 +82,6 @@ class WebCrawlerUsaidDec(WebCrawlerBase):
                 driver.close()
                 print('All links were extracted')
             except:
-                driver.close()
                 print('Problems with selenium.')
         else:
             self._webcrawler_logger.update_status_for_query(query, "Finished with errors", self.check_url(query))
